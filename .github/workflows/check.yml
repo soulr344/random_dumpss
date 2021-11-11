@@ -19,6 +19,10 @@ jobs:
             region: "INS"
           - model: "SM-N770F"
             region: "DBT"
+          - model: "SM-M215F"
+            region: "INS"
+          - model: "SM-M215G"
+            region: "INS"
 
     steps:
       - name: Checkout repo
