@@ -144,13 +144,13 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           tags: true
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ github.token }}
 
       - name: Upload release assets
         if: steps.check.outputs.need_update == 1
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         with:
           body_path: versions.txt
           tag_name: ${{ steps.check.outputs.latest_shortversion }}
