@@ -18,7 +18,7 @@ jobs:
           - model: "SM-M315F"
             region: "INS"
           - model: "SM-N770F"
-            region: "DBT"
+            region: "XEF"
           - model: "SM-M215F"
             region: "INS"
           - model: "SM-M215G"
