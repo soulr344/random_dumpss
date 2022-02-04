@@ -25,6 +25,8 @@ jobs:
             region: "INS"
           - model: "SM-T976B"
             region: "DBT"
+          - model: "SM-G998B"
+            region: "DBT"
 
     steps:
       - name: Checkout repo
